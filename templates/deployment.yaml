@@ -11,16 +11,16 @@ spec:
     matchLabels:
      app: nginx
      demo: deployment
-  templates: 
-    metadata: 
+  templates:
+    metadata:
       labels:
         app: nginx
         demo: deployment
-    spec: 
-      containers: 
+    spec:
+      containers:
       - name: nginx
         image: nginx
         Ports:
-        - container port: 80
+        - containerport: 80
 
 
