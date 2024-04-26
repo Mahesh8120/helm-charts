@@ -1,26 +1,24 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx
   labels:
     app: nginx
-    demo: deployment
+    demo: helm
 spec:
   replicas: 1
   selector:
     matchLabels:
-     app: nginx
-     demo: deployment
+      app: nginx
+      demo: helm
   template:
     metadata:
       labels:
         app: nginx
-        demo: deployment
+        demo: helm
     spec:
       containers:
       - name: nginx
         image: nginx
-        Ports:
-        - containerport: 80
-
-
+        ports:
+        - containerPort: 80
