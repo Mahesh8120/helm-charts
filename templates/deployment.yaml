@@ -7,11 +7,11 @@ metadata:
     demo: deployment
 spec:
   replicas: 1
-  selectors:
+  selector:
     matchLabels:
      app: nginx
      demo: deployment
-  templates:
+  template:
     metadata:
       labels:
         app: nginx
