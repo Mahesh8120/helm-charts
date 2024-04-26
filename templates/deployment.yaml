@@ -2,7 +2,6 @@ apiVersion: app/v1
 kind: Deployment
 metadata:
   name: nginx
-  
   labels:
     app: nginx
     demo: deployment
@@ -17,7 +16,6 @@ spec:
       labels:
         app: nginx
         demo: deployment
-
     spec: 
       containers: 
       - name: nginx
