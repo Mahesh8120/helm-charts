@@ -6,7 +6,7 @@ metadata:
     app: nginx
     demo: helm
 spec:
-  replicas: 1
+  replicas: {{ values.deployment.replicas }}
   selector:
     matchLabels:
       app: nginx
